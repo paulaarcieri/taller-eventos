@@ -5,5 +5,8 @@ function button() {
 
 document.addEventListener("DOMContentLoaded", function() {
     let div = document.getElementById('boton');
-    div.addEventListener("click", button);
+    div.addEventListener("click", button {
+        event.stopPropagation();
+    });
 });
+
